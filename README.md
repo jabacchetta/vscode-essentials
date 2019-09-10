@@ -34,6 +34,8 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 * Extended multi-cursor functionality (incrementing, inserting numeric sequences, etc.)
 * Underlined matching brackets for improved visibility
 * Ability to hack VSCode's stylesheets for UI elements that aren't yet included in the settings or official theme API
+* Semantic indent and scope guides
+* Automatic and manually added (tagged commits) local edit history
 
 ## Recommended Settings
 
@@ -65,6 +67,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 ```jsonc
 {
   "better-comments.tags": [
+    // Clearly mark comments that belong to disabled (commented-out) code.
     {
       "tag": "//",
       "color": "#546e7a",

@@ -2,7 +2,7 @@
   "name": "vscode-essentials",
   "displayName": "VSCode Essentials",
   "description": "Turn VSCode into a supercharged IDE.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.38.0"
   },
