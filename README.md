@@ -1,4 +1,4 @@
-# VSCode Essentials (VSCode Extension Pack)
+# VSCode Essentials (Extension Pack)
 
 [![Inline (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/jabacchetta.vscode-essentials.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=jabacchetta.vscode-essentials)
 [![Inline (VSCode extension) installs badge](https://vsmarketplacebadge.apphb.com/installs-short/jabacchetta.vscode-essentials.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=jabacchetta.vscode-essentials)
@@ -7,7 +7,7 @@
 
 ## Introduction
 
-VSCode Essentials is a collection of many individual extensions that includes all of the
+[VSCode Essentials](https://marketplace.visualstudio.com/items?itemName=jabacchetta.vscode-essentials) is a collection of many individual extensions that includes all of the
 functionality needed to turn VSCode into a ⚡ supercharged ⚡ integrated development environment (IDE).
 
 This extension pack is language-agnostic, and does not include functionality for specific programming languages or
@@ -74,14 +74,6 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
       "strikethrough": true
     }
   ],
-}
-```
-
-### CodeStream
-
-```jsonc
-{
-  "codestream.autoSignIn": false,
 }
 ```
 
@@ -298,7 +290,6 @@ Bug reports should be filed at the repository belonging to the individual extens
 | Checkpoints | [![Checkpoints (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/micnil.vscode-checkpoints.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=micnil.vscode-checkpoints) |
 | Code Runner | [![Code Runner (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/formulahendry.code-runner.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) |
 | Code Spell Checker | [![Code Spell Checker (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/streetsidesoftware.code-spell-checker.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) |
-| CodeStream | [![CodeStream (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/CodeStream.codestream.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=CodeStream.codestream) |
 | Control Snippets | [![Control Snippets (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/svipas.control-snippets.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=svipas.control-snippets) |
 | Customize UI | [![Customize UI (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/iocave.customize-ui.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=iocave.customize-ui) |
 | DotENV | [![DotENV (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/mikestead.dotenv.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) |

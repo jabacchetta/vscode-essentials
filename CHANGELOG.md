@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 2019-09-10
+
+### Added
+
+* Add marketplace link to README.
+
+### Removed
+
+* Remove CodeStream extension until login popup is removed.
+
 ## [1.0.2] - 2019-09-10
 
 ### Changed
