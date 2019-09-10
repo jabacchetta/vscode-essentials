@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2019-09-10
+
+### Changed
+
+* Updated README's language tags for code examples, so that GitHub will properly display comments in the settings examples.
+
+### Added
+
+* Added a dark theme color for marketplace banner so that text displays as white.
+
 ## [1.0.0] - 2019-09-10
 
-- Initial release
+* Initial release

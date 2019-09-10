@@ -2,7 +2,7 @@
   "name": "vscode-essentials",
   "displayName": "VSCode Essentials",
   "description": "Turn VSCode into a supercharged IDE.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.38.0"
   },
@@ -160,7 +160,8 @@
   ],
   "icon": "images/icon.png",
   "galleryBanner": {
-    "color": "#252525"
+    "color": "#252525",
+    "theme": "dark"
   },
   "license": "SEE LICENSE IN LICENSE"
 }

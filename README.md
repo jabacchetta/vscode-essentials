@@ -39,7 +39,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### Bracket Pair Colorizer
 
-```JSON with comments
+```jsonc
 {
     // Disable distracting bracket pair colors (prefer styling of Subtle Bracket matching pairs)
   "bracket-pair-colorizer-2.colors": [],
@@ -62,7 +62,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### Better Comments
 
-```JSON with comments
+```jsonc
 {
   "better-comments.tags": [
     {
@@ -76,7 +76,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### CodeStream
 
-```JSON with comments
+```jsonc
 {
   "codestream.autoSignIn": false,
 }
@@ -84,7 +84,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### Customize UI
 
-```JSON with comments
+```jsonc
 {
   "customizeUI.stylesheet": {
     // NOTE: Hides icons in top right of an editor tab. Only enable if you're already familiar with
@@ -100,7 +100,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### GitLens
 
-```JSON with comments
+```jsonc
 {
   // Toggle from command palette as needed.
   "gitlens.codeLens.enabled": false,
@@ -117,7 +117,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### Macros
 
-```JSON with comments
+```jsonc
 {
   // TODO: Add your own macros. Below are some examples to get you started. Execute these commands with the command palette, or assign them to keyboard shortcuts.
   // NOTE: Use in combination with the Settings Cycler settings listed further down this page.
@@ -140,7 +140,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### MetaGo
 
-```JSON with comments
+```jsonc
 {
   // TODO: Update styling to fit your theme. The following works well with Material Theme.
   "metaGo.decoration.borderColor": "#253036",
@@ -158,7 +158,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### Project Manager
 
-```JSON with comments
+```jsonc
 {
   // TODO: Add the folders where you keep your code projects at.
   "projectManager.any.baseFolders": [
@@ -173,7 +173,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### Rewrap
 
-```JSON with comments
+```jsonc
 {
   "rewrap.autoWrap.enabled": true,
   "rewrap.reformat": true,
@@ -183,7 +183,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### Settings Cycler
 
-```JSON with comments
+```jsonc
 {
   // Use in combination with the Macro settings listed further up this page.
   "settings.cycle": [
@@ -204,7 +204,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### Settings Sync
 
-```JSON with comments
+```jsonc
 {
   "sync.quietSync": true,
 
@@ -215,7 +215,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### Subtle Brackets
 
-```JSON with comments
+```jsonc
 {
   "subtleBrackets.parse": false,
   "subtleBrackets.pairs": [
@@ -250,7 +250,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ### Todo Tree
 
-```JSON with comments
+```jsonc
 {
   "todo-tree.general.tags": [
     "TODO",
