@@ -47,7 +47,10 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
   "bracket-pair-colorizer-2.colors": [],
 
   // TODO: Modify style to fit your theme. This works well with Material Theme.
+  // Customizes indent guide and scope line
   "bracket-pair-colorizer-2.scopeLineCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
     "borderColor : #46535B",
     "opacity: 1"
   ],
@@ -247,13 +250,13 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ```jsonc
 {
-  "todo-tree.general.tags": [
+  "todo-tree.tags": [
     "TODO",
     "FIXME",
     "NOTE",
   ],
 
-  "todo-tree.highlights.customHighlight": {
+  "todo-tree.customHighlight": {
     "NOTE": {
       "icon": "note"
     },
@@ -262,17 +265,17 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
     }
   },
 
-  "todo-tree.highlights.defaultHighlight": {
+  "todo-tree.defaultHighlight": {
     "foreground": "#FFEB95"
   },
 
-  "todo-tree.tree.grouped": true,
-  "todo-tree.tree.hideIconsWhenGroupedByTag": true,
-  "todo-tree.tree.labelFormat": "∙ ${after}",
-  "todo-tree.tree.showCountsInTree": true,
-  "todo-tree.tree.showInExplorer": false,
-  "todo-tree.tree.showScanOpenFilesOrWorkspaceButton": true,
-  "todo-tree.tree.tagsOnly": true,
+  "todo-tree.grouped": true,
+  "todo-tree.hideIconsWhenGroupedByTag": true,
+  "todo-tree.labelFormat": "∙ ${after}",
+  "todo-tree.showCountsInTree": true,
+  "todo-tree.showInExplorer": false,
+  "todo-tree.showScanOpenFilesOrWorkspaceButton": true,
+  "todo-tree.tagsOnly": true,
 }
 ```
 

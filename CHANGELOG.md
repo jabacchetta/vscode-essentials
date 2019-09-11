@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2019-09-10
+
+### Changed
+
+* Updated README with new settings for Bracket Pair Colorizer and Todo Tree.
+
 ## [1.0.3] - 2019-09-10
 
 ### Added
