@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2019-09-12
+
+### Added
+
+* Add CodeStream extension.
+* Add Peacock extension.
+
+### Changed
+
+* Updated README settings for Bracket Pair Colorizer and Todo Tree.
+
+### Removed
+
+* Remove Better Comments extension.
+
 ## [1.0.4] - 2019-09-10
 
 ### Changed

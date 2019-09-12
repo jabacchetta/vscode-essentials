@@ -2,7 +2,7 @@
   "name": "vscode-essentials",
   "displayName": "VSCode Essentials",
   "description": "Turn VSCode into a supercharged IDE.",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.38.0"
   },
@@ -18,7 +18,6 @@
     "Extension Packs"
   ],
   "keywords": [
-    "better comments",
     "code runner",
     "run code",
     "code spell checker",
@@ -116,10 +115,16 @@
     "vscode ide",
     "integrated development environment",
     "vscode essentials",
-    "vscode must-have extensions"
+    "vscode must-have extensions",
+    "codestream",
+    "peacock",
+    "slack",
+    "window colors",
+    "workspace colors",
+    "random theme generator",
+    "unique theme"
   ],
   "extensionPack": [
-    "aaron-bond.better-comments",
     "alefragnani.project-manager",
     "codezombiech.gitignore",
     "ctf0.macros",
@@ -154,7 +159,9 @@
     "xyz.local-history",
     "alefragnani.Bookmarks",
     "CoenraadS.bracket-pair-colorizer-2",
-    "GitHub.vscode-pull-request-github"
+    "GitHub.vscode-pull-request-github",
+    "johnpapa.vscode-peacock",
+    "CodeStream.codestream"
   ],
   "icon": "images/icon.png",
   "galleryBanner": {

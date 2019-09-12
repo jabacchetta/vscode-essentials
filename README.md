@@ -51,7 +51,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
   "bracket-pair-colorizer-2.scopeLineCSS": [
     "borderStyle : solid",
     "borderWidth : 1px",
-    "borderColor : #46535B",
+    "borderColor : #606d75",
     "opacity: 1"
   ],
 
@@ -65,18 +65,11 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 }
 ```
 
-### Better Comments
+### CodeStream
 
 ```jsonc
 {
-  "better-comments.tags": [
-    // Clearly mark comments that belong to disabled (commented-out) code.
-    {
-      "tag": "//",
-      "color": "#546e7a",
-      "strikethrough": true
-    }
-  ],
+  "codestream.autoSignIn": false,
 }
 ```
 
@@ -250,32 +243,40 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ```jsonc
 {
-  "todo-tree.tags": [
+"todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "foreground": "#FFEB95",
+    },
+    "NOTE": {
+      "foreground": "#FFEB95",
+      "icon": "note",
+    },
+    "FIXME": {
+      "foreground": "#FFEB95",
+      "icon": "alert",
+    },
+
+    // Clearly mark comments that belong to disabled (commented-out) code.
+    "//": {
+      "textDecoration": "line-through",
+      "type": "text",
+      "hideFromTree": true,
+    },
+  },
+  "todo-tree.tree.grouped": true,
+  "todo-tree.tree.hideIconsWhenGroupedByTag": true,
+  "todo-tree.tree.labelFormat": "∙ ${after}",
+  "todo-tree.tree.showCountsInTree": true,
+  "todo-tree.tree.showInExplorer": false,
+  "todo-tree.tree.showScanOpenFilesOrWorkspaceButton": true,
+  "todo-tree.tree.tagsOnly": true,
+  "todo-tree.highlights.highlightDelay": 0,
+  "todo-tree.general.tags": [
     "TODO",
     "FIXME",
     "NOTE",
+    "// //",
   ],
-
-  "todo-tree.customHighlight": {
-    "NOTE": {
-      "icon": "note"
-    },
-    "FIXME": {
-      "icon": "alert"
-    }
-  },
-
-  "todo-tree.defaultHighlight": {
-    "foreground": "#FFEB95"
-  },
-
-  "todo-tree.grouped": true,
-  "todo-tree.hideIconsWhenGroupedByTag": true,
-  "todo-tree.labelFormat": "∙ ${after}",
-  "todo-tree.showCountsInTree": true,
-  "todo-tree.showInExplorer": false,
-  "todo-tree.showScanOpenFilesOrWorkspaceButton": true,
-  "todo-tree.tagsOnly": true,
 }
 ```
 
@@ -287,7 +288,6 @@ Bug reports should be filed at the repository belonging to the individual extens
 
 | Extension | Link |
 | --- | --- |
-| Better Comments | [![Better Comments (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/aaron-bond.better-comments.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) |
 | Bookmarks | [![Bookmarks (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/alefragnani.Bookmarks.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) |
 | Bracket Pair Colorizer | [![Bracket Pair Colorizer (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/CoenraadS.bracket-pair-colorizer-2.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) |
 | Checkpoints | [![Checkpoints (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/micnil.vscode-checkpoints.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=micnil.vscode-checkpoints) |
