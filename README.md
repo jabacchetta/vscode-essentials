@@ -36,6 +36,8 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 * Ability to hack VSCode's stylesheets for UI elements that aren't yet included in the settings or official theme API
 * Semantic indent and scope guides
 * Automatic and manually added (tagged commits) local edit history
+* Bookmarks for marking lines of code and quickly jumping back to them
+* Giving workspaces unique colors to help identify the editor when working with multiple instances, using Live Share, or taking advantage of remote development
 
 ## Recommended Settings
 
@@ -293,6 +295,7 @@ Bug reports should be filed at the repository belonging to the individual extens
 | Checkpoints | [![Checkpoints (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/micnil.vscode-checkpoints.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=micnil.vscode-checkpoints) |
 | Code Runner | [![Code Runner (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/formulahendry.code-runner.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) |
 | Code Spell Checker | [![Code Spell Checker (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/streetsidesoftware.code-spell-checker.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) |
+| CodeStream | [![CodeStream (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/CodeStream.codestream.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=CodeStream.codestream) |
 | Control Snippets | [![Control Snippets (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/svipas.control-snippets.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=svipas.control-snippets) |
 | Customize UI | [![Customize UI (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/iocave.customize-ui.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=iocave.customize-ui) |
 | DotENV | [![DotENV (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/mikestead.dotenv.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) |
@@ -315,6 +318,7 @@ Bug reports should be filed at the repository belonging to the individual extens
 | Monkey Patch | [![Monkey Patch (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/iocave.monkey-patch.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=iocave.monkey-patch) |
 | Multiple Clipboards | [![Multiple Clipboards (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/slevesque.vscode-multiclip.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip) |
 | PDF | [![PDF (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/tomoki1207.pdf.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) |
+| Peacock | [![Peacock (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/johnpapa.vscode-peacock.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) |
 | Polacode | [![Polacode (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/pnp.polacode.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=pnp.polacode) |
 | Project Manager | [![Project Manager (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/alefragnani.project-manager.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) |
 | Rewrap | [![Rewrap (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/stkb.rewrap.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=stkb.rewrap) |
