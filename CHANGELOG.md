@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2019-09-15
+
+### Added
+
+* Add Output Colorizer extension.
+* Add VSCode Dimmer Block extension.
+* Add Explorer Exclude extension.
+* Add new extension information to README.
+
 ## [1.1.1] - 2019-09-12
 
 ### Changed

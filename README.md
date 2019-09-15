@@ -38,6 +38,9 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 * Automatic and manually added (tagged commits) local edit history
 * Bookmarks for marking lines of code and quickly jumping back to them
 * Giving workspaces unique colors to help identify the editor when working with multiple instances, using Live Share, or taking advantage of remote development
+* Toggle a dimmer for code outside of the current block scope, reducing the opacity of irrelevant text and allowing you to temporarily focus on a specific block
+* Add syntax highlighting to log files and to VSCode's output/debug panels
+* Toggle the display of hidden files in the explorer
 
 ## Recommended Settings
 
@@ -286,6 +289,10 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 Bug reports should be filed at the repository belonging to the individual extension that is causing the issue (click on the extension's marketplace link below and then look for the repo link in the sidebar, under "Project Details").
 
+## Known Issues
+
+Some extensions will prevent the Output Colorizer extension from adding syntax highlighting in the output/debug panels. This is a VSCode limitation waiting for a fix. The current workaround is to disable extensions (when not needed) that conflict with the Output Colorizer extension. Code Runner is one of the known, conflicting extensions (which itself is also included in this extension pack).
+
 ## Included Extensions
 
 | Extension | Link |
@@ -298,8 +305,10 @@ Bug reports should be filed at the repository belonging to the individual extens
 | CodeStream | [![CodeStream (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/CodeStream.codestream.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=CodeStream.codestream) |
 | Control Snippets | [![Control Snippets (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/svipas.control-snippets.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=svipas.control-snippets) |
 | Customize UI | [![Customize UI (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/iocave.customize-ui.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=iocave.customize-ui) |
+| Dimmer Block | [![Dimmer Block (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/imagio.vscode-dimmer-block.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imagio.vscode-dimmer-block) |
 | DotENV | [![DotENV (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/mikestead.dotenv.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) |
 | Easy Snippet | [![Easy Snippet (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/inu1255.easy-snippet.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=inu1255.easy-snippet) |
+| Explorer Exclude | [![Explorer Exclude (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/RedVanWorkshop.explorer-exclude-vscode-extension.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=RedVanWorkshop.explorer-exclude-vscode-extension) |
 | Format All | [![Format All (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/lacroixdavid1.vscode-format-context-menu.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=lacroixdavid1.vscode-format-context-menu) |
 | Git Graph | [![Git Graph (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/mhutchie.git-graph.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) |
 | GitHub Pull Requests | [![GitHub Pull Requests (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/GitHub.vscode-pull-request-github.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) |
@@ -317,6 +326,7 @@ Bug reports should be filed at the repository belonging to the individual extens
 | MetaGo | [![MetaGo (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/metaseed.metago.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=metaseed.metago) |
 | Monkey Patch | [![Monkey Patch (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/iocave.monkey-patch.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=iocave.monkey-patch) |
 | Multiple Clipboards | [![Multiple Clipboards (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/slevesque.vscode-multiclip.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip) |
+| Output Colorizer | [![Output Colorizer (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/IBM.output-colorizer.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer) |
 | PDF | [![PDF (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/tomoki1207.pdf.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) |
 | Peacock | [![Peacock (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/johnpapa.vscode-peacock.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) |
 | Polacode | [![Polacode (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/pnp.polacode.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=pnp.polacode) |
