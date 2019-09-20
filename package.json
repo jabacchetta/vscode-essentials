@@ -2,7 +2,7 @@
   "name": "vscode-essentials",
   "displayName": "VSCode Essentials",
   "description": "Turn VSCode into a supercharged IDE.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "engines": {
     "vscode": "^1.38.0"
   },
@@ -135,7 +135,11 @@
     "toggle hidden files",
     "list hidden files",
     "manage hidden files",
-    "explorer hidden files"
+    "explorer hidden files",
+    "all autocomplete",
+    "open files intellisense",
+    "project-wide intellisense",
+    "intellisense from all files"
   ],
   "extensionPack": [
     "alefragnani.project-manager",
@@ -177,7 +181,8 @@
     "CodeStream.codestream",
     "IBM.output-colorizer",
     "imagio.vscode-dimmer-block",
-    "RedVanWorkshop.explorer-exclude-vscode-extension"
+    "RedVanWorkshop.explorer-exclude-vscode-extension",
+    "Atishay-Jain.All-Autocomplete"
   ],
   "icon": "images/icon.png",
   "galleryBanner": {

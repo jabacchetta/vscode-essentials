@@ -44,6 +44,18 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 
 ## Recommended Settings
 
+### All Autocomplete
+
+```jsonc
+{
+  // // TODO: Add files that you want to be included in IntelliSense at all times.
+  // // Enable to get autocomplete for the entire project (as opposed to just open files). It's a
+  // // good idea to read the All Autocomplete extension's documentation to understand the performance
+  // // impact of specific settings.
+  // "AllAutocomplete.wordListFiles": ["/src/"],
+}
+```
+
 ### Bracket Pair Colorizer
 
 ```jsonc
@@ -297,6 +309,7 @@ Some extensions will prevent the Output Colorizer extension from adding syntax h
 
 | Extension | Link |
 | --- | --- |
+| All Autocomplete | [![All Autocomplete (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/Atishay-Jain.All-Autocomplete.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=Atishay-Jain.All-Autocomplete) |
 | Bookmarks | [![Bookmarks (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/alefragnani.Bookmarks.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) |
 | Bracket Pair Colorizer | [![Bracket Pair Colorizer (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/CoenraadS.bracket-pair-colorizer-2.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) |
 | Checkpoints | [![Checkpoints (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/micnil.vscode-checkpoints.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=micnil.vscode-checkpoints) |

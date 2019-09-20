@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] - 2019-09-20
+
+### Added
+
+* Add All Autocomplete extension.
+* Add new extension information to README.
+
 ## [1.2.0] - 2019-09-15
 
 ### Added
