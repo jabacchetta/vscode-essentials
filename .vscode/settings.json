@@ -1,0 +1,48 @@
+{
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": false,
+    "**/CVS": false,
+    "**/.DS_Store": false,
+    "**/.*": false,
+    "**/assets/": false,
+    "**/build/": false,
+    "**/dist/": false,
+    "**/publish/": false,
+    "**/frameworks/": false,
+    "**/docs/": false,
+    "**/node_modules/": false,
+    "**/package-lock.json": false,
+    "**/tsconfig.json": false,
+    "**/jsconfig.json": false,
+    "**/tslint.json": false,
+    "**/next.config.js": false,
+    "**/[Rr][Ee][Aa][Dd][Mm][Ee].md": false,
+    "**/*.js": false
+  },
+  "explorerExclude.backup": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.*": true,
+    "**/assets/": true,
+    "**/build/": true,
+    "**/dist/": true,
+    "**/publish/": true,
+    "**/frameworks/": true,
+    "**/docs/": true,
+    "**/node_modules/": true,
+    "**/package-lock.json": true,
+    "**/tsconfig.json": true,
+    "**/jsconfig.json": true,
+    "**/tslint.json": true,
+    "**/next.config.js": true,
+    "**/[Rr][Ee][Aa][Dd][Mm][Ee].md": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    }
+  }
+}
