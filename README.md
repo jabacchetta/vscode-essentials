@@ -5,6 +5,23 @@
 [![Inline (VSCode extension) rating badge](https://vsmarketplacebadge.apphb.com/rating-short/jabacchetta.vscode-essentials.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=jabacchetta.vscode-essentials)
 [![MIT license badge](https://img.shields.io/badge/license-MIT-orange.svg?color=blue)](http://opensource.org/licenses/MIT)
 
+## VSCode Tutorial (Coming Soon)
+
+![DevCast Logo](./images/devcast.jpg)
+
+Tips, tricks, and hacks to boost productivity and master Visual Studio Code! I'll be launching the
+most comprehensive VSCode course to-date. Everything I've learned after:
+
+- answering dozens of questions
+[on StackOverflow](https://stackoverflow.com/users/4500152/jabacchetta)
+- stalking [VSCode's GitHub issues](https://github.com/microsoft/vscode/issues/created_by/jabacchetta)
+- spending thousands of hours with VSCode while working on complex code
+- transitioning from IntelliJ/WebStorm, where I spent many more hours learning how to get the most
+  out of powerful code editors
+
+Launch date expected by end of year (2019). Follow [me on Twitter](https://twitter.com/jabacchetta) or
+[subscribe at DevCast](https://www.devcast.app/) to be notified with promo codes.
+
 ## Introduction
 
 [VSCode Essentials](https://marketplace.visualstudio.com/items?itemName=jabacchetta.vscode-essentials) is a collection of many individual extensions that includes all of the

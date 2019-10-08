@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.3] - 2019-10-07
+
+### Added
+
+* Add VSCode course information to README.
+
 ## [1.3.2] - 2019-09-28
 
 ### Changed
