@@ -2,7 +2,7 @@
   "name": "vscode-essentials",
   "displayName": "VSCode Essentials",
   "description": "Turn VSCode into a supercharged IDE.",
-  "version": "1.3.4",
+  "version": "1.4.0",
   "engines": {
     "vscode": "^1.38.0"
   },
@@ -41,6 +41,10 @@
     "format in context menus",
     "format multiple files",
     "git",
+    "gists",
+    "github gists",
+    "interactive playground",
+    "notes",
     "git graph",
     "git diff",
     "gitignore",
@@ -144,6 +148,7 @@
   "extensionPack": [
     "alefragnani.project-manager",
     "codezombiech.gitignore",
+    "vsls-contrib.gistfs",
     "ctf0.macros",
     "eamodio.gitlens",
     "formulahendry.code-runner",

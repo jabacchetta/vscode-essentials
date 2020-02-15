@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.0] - 2020-02-15
+
+### Added
+
+* Add GistPad extension.
+* Add feature to README.
+
+### Changed
+
+* Update README's recommended settings for Customize UI and Todo Tree.
+
 ## [1.3.4] - 2019-11-03
 
 ### Added

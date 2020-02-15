@@ -37,7 +37,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 * Synced and shared VSCode settings
 * Extended multi-cursor functionality (incrementing, inserting numeric sequences, etc.)
 * Underlined matching brackets for improved visibility
-* Ability to hack VSCode's stylesheets for UI elements that aren't yet included in the settings or official theme API
+* Hack VSCode's stylesheets for UI elements that aren't yet included in the settings or official theme API
 * Semantic indent and scope guides
 * Automatic and manually added (tagged commits) local edit history
 * Bookmarks for marking lines of code and quickly jumping back to them
@@ -45,6 +45,7 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 * Toggle a dimmer for code outside of the current block scope, reducing the opacity of irrelevant text and allowing you to temporarily focus on a specific block
 * Add syntax highlighting to log files and to VSCode's output/debug panels
 * Toggle the display of hidden files in the explorer
+* GitHub Gist management with interactive playgrounds, code snippets, and notes
 
 ## Recommended Settings
 
@@ -99,13 +100,17 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 ```jsonc
 {
   "customizeUI.stylesheet": {
-    // NOTE: Hides icons in top right of an editor tab. Only enable if you're already familiar with
-    // the editor icons, along with their functionality and keyboard shortcuts.
-    ".editor-actions": "display: none !important",
+    // // Hides icons in top right of an editor tab.
+    // // TODO: Enable if you're familiar with editor icons and their keyboard shortcuts.
+    // ".editor-actions": "display: none",
 
-    // TODO: Update `f07178` in the setting below with the hex color of your choice. This changes
-    // the color of the circle that appears in a dirty file's editor tab.
-    ".hc-black .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.close-button-off.dirty, .vs-dark .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.close-button-off.dirty:not(.dirty-border-top)": "background-image: url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' height='16' width='16'%3E%3Ccircle fill='%23f07178' cx='8' cy='8' r='4'/%3E%3C/svg%3E\") !important",
+    // // TODO: Enable if you'd like a border below the sidebar titles.
+    // // TODO: Update 19252B in the setting below with the hex color of your choicer
+    // ".sidebar .composite.title": "border-bottom: 1px solid #19252B",
+
+    // Changes color of the circle that appears in a dirty file's editor tab.
+    // TODO: Update `00bcd480` in the setting below with the hex color of your choice.
+    ".monaco-workbench .part.editor>.content .editor-group-container.active>.title .tabs-container>.tab.dirty>.tab-close .action-label:not(:hover):before, .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.dirty>.tab-close .action-label:not(:hover):before": "color: #00bcd480",
   },
 }
 ```
@@ -265,24 +270,25 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 ```jsonc
 {
   "todo-tree.highlights.customHighlight": {
-    "TODO": {
-      "foreground": "#FFEB95",
-    },
-    "NOTE": {
-      "foreground": "#FFEB95",
-      "icon": "note",
-    },
-    "FIXME": {
-      "foreground": "#FFEB95",
-      "icon": "alert",
-    },
+      "TODO": {
+        "foreground": "#FFEB95",
+      },
+      "NOTE": {
+        "foreground": "#FFEB95",
+        "icon": "note",
+      },
+      "FIXME": {
+        "foreground": "#FFEB95",
+        "icon": "alert",
+      },
 
-    // Clearly mark comments that belong to disabled (commented-out) code.
-    "// //": {
-      "textDecoration": "line-through",
-      "type": "text",
-      "hideFromTree": true,
-    },
+      // Clearly mark comments that belong to disabled (commented-out) code.
+      "// //": {
+        "foreground": "#5d7783",
+        "textDecoration": "line-through",
+        "type": "text",
+        "hideFromTree": true,
+      },
   },
 
   "todo-tree.tree.grouped": true,
@@ -338,6 +344,7 @@ Some extensions will prevent the Output Colorizer extension from adding syntax h
 | Easy Snippet | [![Easy Snippet (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/inu1255.easy-snippet.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=inu1255.easy-snippet) |
 | Explorer Exclude | [![Explorer Exclude (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/RedVanWorkshop.explorer-exclude-vscode-extension.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=RedVanWorkshop.explorer-exclude-vscode-extension) |
 | Format All | [![Format All (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/lacroixdavid1.vscode-format-context-menu.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=lacroixdavid1.vscode-format-context-menu) |
+| GistPad | [![GistPad (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/vsls-contrib.gistfs.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs) |
 | Git Graph | [![Git Graph (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/mhutchie.git-graph.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) |
 | GitHub Pull Requests | [![GitHub Pull Requests (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/GitHub.vscode-pull-request-github.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) |
 | Gitignore | [![Gitignore (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/codezombiech.gitignore.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore) |
