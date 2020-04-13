@@ -36,16 +36,15 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 * Macros for executing multiple commands with a single keyboard shortcut
 * Synced and shared VSCode settings
 * Extended multi-cursor functionality (incrementing, inserting numeric sequences, etc.)
-* Underlined matching brackets for improved visibility
 * Hack VSCode's stylesheets for UI elements that aren't yet included in the settings or official theme API
 * Semantic indent and scope guides
 * Automatic and manually added (tagged commits) local edit history
 * Bookmarks for marking lines of code and quickly jumping back to them
 * Giving workspaces unique colors to help identify the editor when working with multiple instances, using Live Share, or taking advantage of remote development
-* Toggle a dimmer for code outside of the current block scope, reducing the opacity of irrelevant text and allowing you to temporarily focus on a specific block
 * Add syntax highlighting to log files and to VSCode's output/debug panels
 * Toggle the display of hidden files in the explorer
 * GitHub Gist management with interactive playgrounds, code snippets, and notes
+* Synchronize edits you make in a Search Editor back to source files.
 
 ## Recommended Settings
 
@@ -58,32 +57,6 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
   // // good idea to read the All Autocomplete extension's documentation to understand the performance
   // // impact of specific settings.
   // "AllAutocomplete.wordListFiles": ["/src/"],
-}
-```
-
-### Bracket Pair Colorizer
-
-```jsonc
-{
-    // Disable distracting bracket pair colors (prefer styling of Subtle Bracket matching pairs)
-  "bracket-pair-colorizer-2.colors": [],
-
-  // TODO: Modify style to fit your theme. This works well with Material Theme.
-  // Customizes indent guide and scope line
-  "bracket-pair-colorizer-2.scopeLineCSS": [
-    "borderStyle : solid",
-    "borderWidth : 1px",
-    "borderColor : #606d75",
-    "opacity: 1"
-  ],
-
-  // // Set to false if wanting to remove the horizontal scope line that connects to the active indent
-  // // guide.
-  // "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
-
-  // Turn off built-in active indent guides since they aren't semantic (parent scope gets
-  // highlighted in some scenarios).
-  "editor.highlightActiveIndentGuide": false,
 }
 ```
 
@@ -100,17 +73,24 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 ```jsonc
 {
   "customizeUI.stylesheet": {
-    // // Hides icons in top right of an editor tab.
-    // // TODO: Enable if you're familiar with editor icons and their keyboard shortcuts.
-    // ".editor-actions": "display: none",
+    // NOTE: Only hide icons if you're already familiar with their functionality and shortcuts
+    // Hides specific editor action icons
+    ".editor-actions a[title^=\"Toggle File Blame Annotations\"]": "display: none !important;",
+    ".editor-actions a[title^=\"Open Changes\"]": "display: none !important;",
+    ".editor-actions a[title^=\"More Actions...\"]": "display: none !important;",
+    ".editor-actions a[title^=\"Split Editor Right (⌘\\\\)\"]": "display: none !important;",
+    ".editor-actions a[title^=\"Run Code (⌃⌥N)\"]": "display: none !important;",
 
-    // // TODO: Enable if you'd like a border below the sidebar titles.
-    // // TODO: Update 19252B in the setting below with the hex color of your choicer
-    // ".sidebar .composite.title": "border-bottom: 1px solid #19252B",
+    // Adds a border below the sidebar title.
+    // TODO: Update `19252B` in the setting below with the hex color of your choice.
+    ".sidebar .composite.title": "border-bottom: 1px solid #19252B;",
+
+    // Leaves only the bottom border on matching bracket border.
+    ".monaco-editor .bracket-match": "border-top: none; border-right: none; border-left: none;",
 
     // Changes color of the circle that appears in a dirty file's editor tab.
     // TODO: Update `00bcd480` in the setting below with the hex color of your choice.
-    ".monaco-workbench .part.editor>.content .editor-group-container.active>.title .tabs-container>.tab.dirty>.tab-close .action-label:not(:hover):before, .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.dirty>.tab-close .action-label:not(:hover):before": "color: #00bcd480",
+    ".monaco-workbench .part.editor>.content .editor-group-container.active>.title .tabs-container>.tab.dirty>.tab-close .action-label:not(:hover):before, .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.dirty>.tab-close .action-label:not(:hover):before": "color: #00bcd480;",
   },
 }
 ```
@@ -230,41 +210,6 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 }
 ```
 
-### Subtle Brackets
-
-```jsonc
-{
-  "subtleBrackets.parse": false,
-  "subtleBrackets.pairs": [
-    {
-      "open": "(",
-      "close": ")"
-    },
-    {
-      "open": "[",
-      "close": "]"
-    },
-    {
-      "open": "{",
-      "close": "}"
-    },
-    {
-      "open": "<",
-      "close": ">"
-    },
-  ],
-
-  // TODO: Change border color to match the theme you're using.
-  "subtleBrackets.style": {
-    // Matches Material Theme cursor color.
-    "borderColor": "#ffcc00",
-  },
-
-  // NOTE: Required for Subtle Brackets to work (removes native brackets).
-  "editor.matchBrackets": false,
-}
-```
-
 ### Todo Tree
 
 ```jsonc
@@ -332,14 +277,12 @@ Some extensions will prevent the Output Colorizer extension from adding syntax h
 | --- | --- |
 | All Autocomplete | [![All Autocomplete (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/Atishay-Jain.All-Autocomplete.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=Atishay-Jain.All-Autocomplete) |
 | Bookmarks | [![Bookmarks (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/alefragnani.Bookmarks.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) |
-| Bracket Pair Colorizer | [![Bracket Pair Colorizer (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/CoenraadS.bracket-pair-colorizer-2.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) |
 | Checkpoints | [![Checkpoints (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/micnil.vscode-checkpoints.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=micnil.vscode-checkpoints) |
 | Code Runner | [![Code Runner (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/formulahendry.code-runner.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) |
 | Code Spell Checker | [![Code Spell Checker (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/streetsidesoftware.code-spell-checker.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) |
 | CodeStream | [![CodeStream (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/CodeStream.codestream.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=CodeStream.codestream) |
 | Control Snippets | [![Control Snippets (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/svipas.control-snippets.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=svipas.control-snippets) |
 | Customize UI | [![Customize UI (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/iocave.customize-ui.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=iocave.customize-ui) |
-| Dimmer Block | [![Dimmer Block (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/imagio.vscode-dimmer-block.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imagio.vscode-dimmer-block) |
 | DotENV | [![DotENV (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/mikestead.dotenv.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) |
 | Easy Snippet | [![Easy Snippet (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/inu1255.easy-snippet.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=inu1255.easy-snippet) |
 | Explorer Exclude | [![Explorer Exclude (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/RedVanWorkshop.explorer-exclude-vscode-extension.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=RedVanWorkshop.explorer-exclude-vscode-extension) |
@@ -367,8 +310,8 @@ Some extensions will prevent the Output Colorizer extension from adding syntax h
 | Polacode | [![Polacode (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/pnp.polacode.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=pnp.polacode) |
 | Project Manager | [![Project Manager (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/alefragnani.project-manager.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) |
 | Rewrap | [![Rewrap (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/stkb.rewrap.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=stkb.rewrap) |
+| Search Editor: Apply Changes | [![Search Editor: Apply Changes (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/stkb.rewrap.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=jakearl.search-editor-apply-changes) |
 | Settings Cycler | [![Settings Cycler (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/hoovercj.vscode-settings-cycler.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-settings-cycler) |
 | Settings Sync | [![Settings Sync (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/Shan.code-settings-sync.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) |
-| Subtle Match Brackets | [![Subtle Match Brackets (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/rafamel.subtle-brackets.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=rafamel.subtle-brackets) |
 | Text Pastry | [![Text Pastry (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/jkjustjoshing.vscode-text-pastry.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=jkjustjoshing.vscode-text-pastry) |
 | Todo Tree | [![Todo Tree (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/Gruntfuggly.todo-tree.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) |

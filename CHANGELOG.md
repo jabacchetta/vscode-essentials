@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.0] - 2020-04-13
+
+### Added
+
+* Add *Search Editor: Apply Changes* extension.
+
+### Changed
+
+* Update README.
+
+### Removed
+
+* Remove *Subtle Brackets* extension.
+* Remove *Bracket Pair Colorizer 2* extension.
+* Remove *VSCode Dimmer Block* extension.
+
 ## [1.4.0] - 2020-02-15
 
 ### Added
