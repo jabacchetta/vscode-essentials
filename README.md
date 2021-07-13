@@ -34,7 +34,6 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 * Smart backspacing (delete indentation/whitespace)
 * Cursor navigation with the ability to go to any character with a few keystrokes
 * Macros for executing multiple commands with a single keyboard shortcut
-* Synced and shared VSCode settings
 * Extended multi-cursor functionality (incrementing, inserting numeric sequences, etc.)
 * Hack VSCode's stylesheets for UI elements that aren't yet included in the settings or official theme API
 * Semantic indent and scope guides
@@ -199,17 +198,6 @@ frameworks. Instead, this extension's objective is to remain relatively lean whi
 }
 ```
 
-### Settings Sync
-
-```jsonc
-{
-  "sync.quietSync": true,
-
-  // TODO: Add your gist ID
-  "sync.gist": "00000000000000000000000000000000",
-}
-```
-
 ### Todo Tree
 
 ```jsonc
@@ -312,6 +300,5 @@ Some extensions will prevent the Output Colorizer extension from adding syntax h
 | Rewrap | [![Rewrap (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/stkb.rewrap.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=stkb.rewrap) |
 | Search Editor: Apply Changes | [![Search Editor: Apply Changes (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/stkb.rewrap.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=jakearl.search-editor-apply-changes) |
 | Settings Cycler | [![Settings Cycler (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/hoovercj.vscode-settings-cycler.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-settings-cycler) |
-| Settings Sync | [![Settings Sync (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/Shan.code-settings-sync.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) |
 | Text Pastry | [![Text Pastry (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/jkjustjoshing.vscode-text-pastry.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=jkjustjoshing.vscode-text-pastry) |
 | Todo Tree | [![Todo Tree (VSCode extension) version badge](https://vsmarketplacebadge.apphb.com/version-short/Gruntfuggly.todo-tree.svg?color=blue&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) |

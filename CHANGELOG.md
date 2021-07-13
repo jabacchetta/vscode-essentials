@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.0] - 2021-07-13
+
+### Removed
+
+* Remove *Settings Sync* extension.
+
 ## [1.5.0] - 2020-04-13
 
 ### Added

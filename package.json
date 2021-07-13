@@ -2,7 +2,7 @@
   "name": "vscode-essentials",
   "displayName": "VSCode Essentials",
   "description": "Turn VSCode into a supercharged IDE.",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "engines": {
     "vscode": "^1.38.0"
   },
@@ -89,8 +89,6 @@
     "wrap comments",
     "settings cycler",
     "toggle settings",
-    "settings sync",
-    "synchronize settings",
     "share settings",
     "text pastry",
     "increment selection",
@@ -165,7 +163,6 @@
     "lostintangent.vsls-whiteboard",
     "nhoizey.gremlins",
     "pnp.polacode",
-    "Shan.code-settings-sync",
     "slevesque.vscode-multiclip",
     "stkb.rewrap",
     "streetsidesoftware.code-spell-checker",
